@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia 5.0 - Memorias del Evento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Colombia 5.0</div>
+        <div class="nav-links">
+            <a href="#inicio" id="nav-home">Inicio</a>
+            <a href="#conferencias" id="nav-conf">Conferencias</a>
+            <a href="#glosario" id="nav-glos">Glosario</a>
+            <a href="#etica" id="nav-eth">Ética</a>
+        </div>
+        <button id="lang-btn" class="btn-translate">English</button>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 id="hero-title">Memorias del Evento Colombia 5.0</h1>
+            <p id="hero-subtitle">Innovación, Inteligencia Artificial y Sistemas Visuales Avanzados en la Industria Tecnológica Profesional.</p>
+            <a href="#conferencias" class="btn-primary" id="hero-btn">Ver Conferencias</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="conferencias">
+            <h2 class="section-title" id="title-conferencias">Conferencias Analizadas</h2>
+            
+            <div class="card">
+                <span class="badge">Bacon Games</span>
+                <h3 id="c1-title">Desarrollo de 'FIFA Rivals' y la Revolución de los Agentes de IA en Videojuegos</h3>
+                <p class="speaker"><strong id="lbl-c1-speaker">Conferencistas:</strong> Alejandro González & Jairo Nieto</p>
+                
+                <div class="card-body">
+                    <p id="c1-p1">En este espacio analizamos los puntos clave de la conferencia de Bacon Games. El desarrollo de 'FIFA Rivals' fue un reto de desarrollo bastante fuerte: armar un juego global en solo 10 meses. El problema principal del equipo era cómo sacar actualizaciones semanales, traducir a más de 10 idiomas y generar miles de recursos visuales sin colapsar. Para solucionarlo, explicaron cómo implementaron una arquitectura con agentes de IA, que básicamente sirven como un multiplicador de la capacidad de trabajo en el pipeline de desarrollo.</p>
+                    <p id="c1-p2">El uso de la IA se enfocó en automatizar tareas repetitivas de diseño y escalabilidad. Con herramientas automatizadas para quitar fondos y mejorar la resolución de imágenes (upscale), el equipo procesó miles de cartas de jugadores en tiempo récord. Lo que antes tomaba semanas de trabajo manual, pasó a resolverse en horas. Esto nos demuestra que optimizar el flujo de trabajo con IA permite mantener una calidad visual de nivel internacional sin quemar al equipo de desarrollo.</p>
+                    <p id="c1-p3">Como aprendices de software, lo más interesante fue ver cómo usaron sistemas como Google Gemini para automatizar la documentación de las APIs y agilizar el código del backend. Estos asistentes de programación optimizaron la localización del software y mejoraron las pruebas de QA (control de calidad). Al final, la lección de este evento es clara: integrar IA en el ciclo de vida del software ya no es una opción, sino una necesidad para competir en el mercado de la industria 5.0.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; width: 100%; margin-bottom: 20px;">
+                        <img style="width: 100%; height: 320px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" src="20260508_113221.jpg" alt="Registro del taller 1">
+                        <img style="width: 100%; height: 320px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" src="20260508_113708.jpg" alt="Anatomía de un Agente">
+                        <img style="width: 100%; height: 320px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" src="20260508_114249.jpg" alt="Registro del taller 3">
+                        <img style="width: 100%; height: 320px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" src="20260508_114247.jpg" alt="Registro del taller 4">
+                        <img style="width: 100%; height: 320px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" src="20260508_113708.jpg" alt="Registro del taller 5">
+                    </div>
+
+                </div>
+                <div class="keywords">
+                    <span class="kw-tag">FIFA Rivals</span>
+                    <span class="kw-tag" id="kw-ai">Agentes de IA</span>
+                    <span class="kw-tag" id="kw-sc">Escalabilidad</span>
+                    <span class="kw-tag" id="kw-auto">Automatización</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-accent">Teravision Games</span>
+                <h3 id="c2-title">Game UI Systems: De pantallas bonitas a interfaces que funcionan</h3>
+                <p class="speaker"><strong id="lbl-c2-speaker">Conferencista:</strong> Andrés Felipe Pisso Tobar (Lead UX Designer)</p>
+                
+                <div class="card-body">
+                    <p id="c2-p1">Esta charla nos cambió la perspectiva sobre el diseño frontend e interfaces. El expositor nos explicó que diseñar UI no es solo hacer pantallas sueltas que se vean bonitas, sino construir un sistema escalable y lógico. En el taller vimos las 5 fases clave que estructuran un sistema de UI profesional:</p>
+                    
+                    <ul class="ui-list">
+                        <li><strong>Foundations:</strong> <span id="f1">El ADN visual del proyecto: colores, fuentes y la jerarquía que guía al usuario.</span></li>
+                        <li><strong>Components:</strong> <span id="f2">Bloques de código y diseño reutilizables, como botones, inputs y contenedores.</span></li>
+                        <li><strong>States:</strong> <span id="f3">Cómo responde la interfaz visualmente según la lógica del juego (Normal, Alerta, Crítico, Recompensa).</span></li>
+                        <li><strong>Patterns:</strong> <span id="f4">Estructuras repetibles que organizan las pantallas para que la navegación sea coherente.</span></li>
+                        <li><strong>Screen:</strong> <span id="f5">La vista final ya unificada, modular y limpia de código redundante.</span></li>
+                    </ul>
+
+                    <p id="c2-p2">Además, aprendimos técnicas clave en Figma que nos sirven mucho para maquetar, como el uso de Auto Layout para hacer diseños adaptables y Variants para gestionar los estados del componente (hover, activo, deshabilitado). Por último, nos enseñó el 'Test de los 3 Segundos' para evaluar el HUD: en solo 3 segundos el usuario debe entender qué está pasando, cuántos recursos tiene y si hay algún peligro en pantalla. Una gran lección de usabilidad aplicada.</p>
+                </div>
+
+                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; width: 100%; margin-bottom: 20px;">
+                    <img style="width: 100%; height: 320px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" src="20260508_123851.jpg" alt="Conferencia Game UI">
+                    <img style="width: 100%; height: 320px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" src="20260508_123846.jpg" alt="Público asistente">
+                    <img style="width: 100%; height: 320px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" src="20260508_123844.jpg" alt="Perspectiva de la sala">
+                    <img style="width: 100%; height: 320px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" src="20260508_123842.jpg" alt="Detalle del taller">
+                    <img style="width: 100%; height: 320px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" src="20260508_123838.jpg" alt="Exposición de interfaces">
+                </div>
+
+                <div class="keywords">
+                    <span class="kw-tag">Figma</span>
+                    <span class="kw-tag">HUD</span>
+                    <span class="kw-tag">Auto Layout</span>
+                    <span class="kw-tag">UX/UI Design</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="glosario">
+            <h2 class="section-title" id="title-glosario">Glosario Técnico de Términos</h2>
+            <div class="table-container">
+                <table id="glossary-table">
+                    <thead>
+                        <tr>
+                            <th id="th-eng">Término (Inglés)</th>
+                            <th id="th-esp">Traducción (Español)</th>
+                            <th id="th-def">Definición Académica</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Scalability</td><td>Escalabilidad</td><td class="def-text" data-es="Capacidad de un sistema para manejar el crecimiento sin perder rendimiento." data-en="The capacity of a system to handle growth without sacrificing performance.">Capacidad de un sistema para manejar el crecimiento sin perder rendimiento.</td></tr>
+                        <tr><td>AI Agent</td><td>Agente IA</td><td class="def-text" data-es="Entidad de software autónoma que ejecuta tareas lógicas específicas mediante modelos de lenguaje." data-en="Autonomous software entity that executes specific logical tasks using language models.">Entidad de software autónoma que ejecuta tareas lógicas específicas mediante modelos de lenguaje.</td></tr>
+                        <tr><td>Programming</td><td>Programación</td><td class="def-text" data-es="Proceso de diseñar y codificar instrucciones estructuradas para una computadora." data-en="The process of designing and coding structured instructions for a computer.">Proceso de diseñar y codificar instrucciones estructuradas para una computadora.</td></tr>
+                        <tr><td>Robust Documentation</td><td>Documentación Robusta</td><td class="def-text" data-es="Registro exhaustivo de la arquitectura, APIs y lógicas de desarrollo de un sistema." data-en="Comprehensive record of the architecture, APIs, and development logics of a system.">Registro exhaustivo de la arquitectura, APIs y lógicas de desarrollo de un sistema.</td></tr>
+                        <tr><td>Backend</td><td>Backend</td><td class="def-text" data-es="Capa lógica de servidor y procesamiento de datos oculta al usuario final." data-en="The server-side logic and data processing layer hidden from the end user.">Capa lógica de servidor y procesamiento de datos oculta al usuario final.</td></tr>
+                        <tr><td>QA (Quality Assurance)</td><td>Aseguramiento de Calidad</td><td class="def-text" data-es="Procesos sistemáticos de control para auditar fallas y errores en el software." data-en="Systematic control processes to audit bugs and errors in software.">Procesos sistemáticos de control para auditar fallas y errores en el software.</td></tr>
+                        <tr><td>Localization</td><td>Localización</td><td class="def-text" data-es="Adaptación técnica, lingüística y cultural de un software a un mercado regional." data-en="Technical, linguistic, and cultural adaptation of software for a regional market.">Adaptación técnica, lingüística y cultural de un software a un mercado regional.</td></tr>
+                        <tr><td>Prompt Engineering</td><td>Ingeniería de Prompts</td><td class="def-text" data-es="Diseño estratégico de instrucciones de entrada para optimizar modelos generativos." data-en="Strategic design of input instructions to optimize generative models.">Diseño estratégico de instrucciones de entrada para optimizar modelos generativos.</td></tr>
+                        <tr><td>Asset Generation</td><td>Generación de Activos</td><td class="def-text" data-es="Creación automatizada o manual de recursos visuales, de audio u optimizaciones gráficas." data-en="Automated or manual creation of visual, audio resources, or graphic optimizations.">Creación automatizada o manual de recursos visuales, de audio u optimizaciones gráficas.</td></tr>
+                        <tr><td>Biomemory</td><td>Biomemoria</td><td class="def-text" data-es="Concepto avanzado de persistencia contextual y almacenamiento lógico en agentes inteligentes." data-en="Advanced concept of contextual persistence and logical storage in intelligent agents.">Concepto avanzado de persistencia contextual y almacenamiento lógico en agentes inteligentes.</td></tr>
+                        <tr><td>Cloud Computing</td><td>Computación en la Nube</td><td class="def-text" data-es="Distribución de servicios tecnológicos (servidores, redes) bajo demanda vía Internet." data-en="On-demand delivery of computing services (servers, networks) over the Internet.">Distribución de servicios tecnológicos (servidores, redes) bajo demanda vía Internet.</td></tr>
+                        <tr><td>UI (User Interface)</td><td>Interfaz de Usuario</td><td class="def-text" data-es="Conjunto de elementos visuales y controles gráficos mediante los cuales el usuario opera." data-en="The visual elements and graphic controls through which the user operates.">Conjunto de elementos visuales y controles gráficos mediante los cuales el usuario opera.</td></tr>
+                        <tr><td>UX (User Experience)</td><td>Experiencia de Usuario</td><td class="def-text" data-es="Percepción, facilidad de uso y nivel de satisfacción del usuario al interactuar con el software." data-en="The perception, ease of use, and satisfaction level of the user when interacting with software.">Percepción, facilidad de uso y nivel de satisfacción del usuario al interactuar con el software.</td></tr>
+                        <tr><td>HUD</td><td>Heads-Up Display</td><td class="def-text" data-es="Información gráfica proyectada de forma fija en la pantalla durante el gameplay." data-en="Graphical information projected static on the screen during gameplay.">Información gráfica proyectada de forma fija en la pantalla durante el gameplay.</td></tr>
+                        <tr><td>Variants</td><td>Variantes</td><td class="def-text" data-es="Agrupaciones en Figma para organizar diferentes estados de un mismo componente." data-en="Groupings in Figma to organize different states of the same component.">Agrupaciones en Figma para organizar different states of the same component.</td></tr>
+                        <tr><td>Auto Layout</td><td>Auto Layout</td><td class="def-text" data-es="Propiedad dinámica de diseño estructural que adapta contenedores según su contenido." data-en="Dynamic structural layout property that adapts containers according to their content.">Propiedad dinámica de diseño estructural que adapta contenedores según su contenido.</td></tr>
+                        <tr><td>Figma</td><td>Figma</td><td class="def-text" data-es="Herramienta colaborativa en la nube para el prototipado y diseño de interfaces." data-en="Collaborative cloud-based tool for interface prototyping and design.">Herramienta colaborativa en la nube para el prototipado y diseño de interfaces.</td></tr>
+                        <tr><td>Gameplay</td><td>Gameplay</td><td class="def-text" data-es="Experiencia e interacción nuclear que definen las mecánicas de un videojuego." data-en="Core experience and interactions that define a video game's mechanics.">Experiencia e interacción nuclear que definen las mecánicas de un videojuego.</td></tr>
+                        <tr><td>Responsive Design</td><td>Diseño Adaptable</td><td class="def-text" data-es="Filosofía de maquetación que ajusta el CSS a cualquier tamaño de pantalla de usuario." data-en="Layout philosophy that adjusts CSS to any user screen size.">Filosofía de maquetación que ajusta el CSS a cualquier tamaño de pantalla de usuario.</td></tr>
+                        <tr><td>Visual Hierarchy</td><td>Jerarquía Visual</td><td class="def-text" data-es="Organización intencional de elementos para guiar el ojo del usuario según su relevancia." data-en="Intentional organization of elements to guide the user's eye according to relevance.">Organización intencional de elementos para guiar el ojo del usuario según su relevancia.</td></tr>
+                        <tr><td>Iconography</td><td>Iconografía</td><td class="def-text" data-es="Lenguaje simbólico visual simplificado usado para comunicar funciones de software." data-en="Simplified visual symbolic language used to communicate software functions.">Lenguaje simbólico visual simplificado usado para comunicar funciones de software.</td></tr>
+                        <tr><td>User Feedback</td><td>Retroalimentación</td><td class="def-text" data-es="Respuesta interactiva (visual/audible) del sistema ante una acción humana." data-en="Interactive response (visual/audible) of the system to a human action.">Respuesta interactiva (visual/audible) del sistema ante una acción humana.</td></tr>
+                        <tr><td>Deployment</td><td>Despliegue</td><td class="def-text" data-es="Fase de publicación técnica para mover código desde el entorno local a producción." data-en="Technical release phase to move code from local environment to production.">Fase de publicación técnica para mover código desde el entorno local a producción.</td></tr>
+                        <tr><td>Framework</td><td>Marco de Trabajo</td><td class="def-text" data-es="Estructura de software estandarizada que acelera el desarrollo de aplicaciones." data-en="Standardized software structure that accelerates application development.">Estructura de software estandarizada que accelerates application development.</td></tr>
+                        <tr><td>API</td><td>Interfaz de Aplicación</td><td class="def-text" data-es="Protocolo de comunicación seguro entre sistemas de software independientes." data-en="Secure communication protocol between independent software systems.">Protocolo de comunicación seguro entre sistemas de software independientes.</td></tr>
+                        <tr><td>Latency</td><td>Latencia</td><td class="def-text" data-es="Tiempo de retraso exacto medido en la transmisión de datos a través de una red." data-en="Exact delay time measured in data transmission over a network.">Tiempo de retraso exacto medido en la transmisión de datos a través de una red.</td></tr>
+                        <tr><td>Database</td><td>Base de Datos</td><td class="def-text" data-es="Repositorio estructurado para el almacenamiento, consulta y modelado de datos." data-en="Structured repository for data storage, querying, and modeling.">Repositorio estructurado para el almacenamiento, consulta y modelado de datos.</td></tr>
+                        <tr><td>Optimization</td><td>Optimización</td><td class="def-text" data-es="Modificación del código para incrementar la velocidad y disminuir el uso de recursos." data-en="Code modification to increase speed and decrease resource consumption.">Modificación del código para incrementar la velocidad y disminuir el uso de recursos.</td></tr>
+                        <tr><td>Repository</td><td>Repositorio</td><td class="def-text" data-es="Espacio digital centralizado donde se gestiona y almacena código fuente con Git." data-en="Centralized digital space where source code is managed and stored using Git.">Espacio digital centralizado donde se gestiona y almacena código fuente con Git.</td></tr>
+                        <tr><td>Version Control</td><td>Control de Versiones</td><td class="def-text" data-es="Sistema técnico para registrar y coordinar las modificaciones de código en equipo." data-en="Technical system to track and coordinate code modifications within a team.">Sistema técnico para registrar y coordinar las modificaciones de código en equipo.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="etica">
+            <h2 class="section-title" id="title-etica">Reflexión Ética y Conclusión</h2>
+            <div class="card ethics-block">
+                <h3 id="eth-sub1">Ética en la Tecnología Empresarial</h3>
+                <p id="eth-p1">Para nosotros como futuros desarrolladores, la ética no es teoría, es un requisito clave para que un proyecto de software sea sostenible. En casos como el de Bacon Games, esto se conecta directo con el <strong>manejo de datos y la privacidad</strong>. Al construir o entrenar agentes de IA, nuestra responsabilidad técnica nos exige proteger la información de los usuarios y evitar sesgos algorítmicos que afecten a la comunidad, garantizando transparencia en el backend.</p>
+                
+                <h3 id="eth-sub2">El Factor Humano ante la Automatización</h3>
+                <p id="eth-p2">Respecto a la automatización de procesos y el empleo, el diseño ético nos enseña que la IA debe ser un soporte para potenciar nuestras capacidades, no para reemplazar el análisis humano. En 'FIFA Rivals', automatizar la optimización gráfica y el procesamiento de assets liberó a los diseñadores de tareas repetitivas para enfocarse en la lógica creativa de alto valor. El verdadero reto profesional está en aprender a trabajar de forma colaborativa y simbiótica con estas tecnologías emergentes.</p>
+                
+                <h3 id="eth-sub3">Responsabilidad Profesional e Innovación con IA</h3>
+                <p id="eth-p3">Finalmente, estructurar un sistema visual modular en UI (como lo expuesto por Teravision Games) o desplegar software a gran escala implica cuidar la experiencia del usuario y su salud cognitiva. Las interfaces controlan cómo las personas interactúan con nuestros sistemas lógicos. Como aprendices del SENA, nuestro compromiso profesional nos obliga a poner la calidad, la accesibilidad limpia y la transparencia por encima de la velocidad de entrega, logrando un equilibrio real entre la innovación del software y el impacto social.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - SENA Centro de Manufactura en Textil y Cuero. Regional Distrito Capital. Evidencia Colombia 5.0. <br> 
+        <small>Pagina web desarrollada con asistencia de IA para la optimización de codigo y traducción técnica.</small></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

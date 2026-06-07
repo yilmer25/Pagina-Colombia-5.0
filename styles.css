@@ -1,0 +1,322 @@
+
+
+:root {
+    --primary-color: #512da8;    /* Morado Académico Elegante */
+    --accent-color: #ff6d00;     /* Naranja Gamer/Tecnológico (Bacon) */
+    --dark-bg: #1e1e24;          /* Gris Oscuro Contraste */
+    --light-bg: #f4f6f9;         /* Fondo General Relajante */
+    --text-main: #2b2d42;        /* Texto Principal */
+    --text-muted: #6c757d;       /* Texto Secundario */
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+/* Reset General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Navbar Funcional Estancado */
+nav {
+    background-color: var(--primary-color);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav .logo {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+nav .nav-links a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: var(--transition);
+}
+
+nav .nav-links a:hover {
+    color: var(--white);
+    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
+/* Botón de Idioma */
+.btn-translate {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 8px 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-translate:hover {
+    background-color: #e56200;
+    transform: translateY(-2px);
+}
+
+/* Hero Section / Banner de Inicio */
+.hero {
+    background: linear-gradient(135deg, rgba(81,45,168,0.92) 0%, rgba(30,30,36,0.95) 100%);
+    color: var(--white);
+    padding: 100px 20px;
+    text-align: center;
+    box-shadow: inset 0 -10px 20px rgba(0,0,0,0.1);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #e0d7f5;
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #e56200;
+    box-shadow: 0 4px 15px rgba(255, 109, 0, 0.4);
+}
+
+/* Contenedor y Secciones */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 15px;
+    font-weight: 700;
+}
+
+/* Tarjetas Académicas (Cards) */
+.card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.03);
+    position: relative;
+}
+
+.badge {
+    background-color: rgba(81,45,168,0.1);
+    color: var(--primary-color);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.badge-accent {
+    background-color: rgba(255,109,0,0.1);
+    color: var(--accent-color);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    max-width: 80%;
+    color: #1a1c29;
+}
+
+.speaker {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.card-body p {
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #4a4e69;
+}
+
+/* Lista del Sistema UI */
+.ui-list {
+    list-style: none;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+.ui-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.ui-list li::before {
+    content: "■";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+}
+
+/* Palabras clave (Keywords Tags) */
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.kw-tag {
+    background-color: #f0f2f5;
+    color: var(--text-main);
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Tabla del Glosario Responsive */
+.table-container {
+    overflow-x: auto;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 15px;
+    font-weight: 600;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eef2f5;
+    color: #4a4e69;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Bloque Especial de Ética */
+.ethics-block h3 {
+    margin-top: 25px;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.ethics-block h3:first-of-type {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: #999;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 13px;
+    margin-top: 80px;
+}
+
+/* Responsive Design (Media Queries Básicos y Avanzados) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    nav .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 30px;
+    }
+    
+    .card h3 {
+        max-width: 100%;
+    }
+    
+    .badge {
+        position: static;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    .contenedor {
+        width: 15%;
+    }
+}
